@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" ng-app="VoteTube">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.1/css/material.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.1/css/ripples.css" />
+
+    <link rel="stylesheet" href="styles/main.css">
+
+  </head>
+  <body>
+
+    <div class="jumbotron">
+        <div ui-view=""></div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.1.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.9.1/angularfire.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.1/js/material.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.2.1/js/ripples.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $.material.init();
+        });
+    </script>
+
+    <script src="scripts/app.js"></script>
+
+</body>
+</html>
